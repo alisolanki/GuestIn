@@ -1,0 +1,92 @@
+﻿{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>The Cult</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}" />
+    <link rel='shortcut icon' type='image/x-icon' href="{% static 'images/favicon.ico' %}" />
+
+    <style>
+        body {
+            background:none;
+            background-color:black;
+            
+        }
+    </style>
+
+</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+                <header id="header">
+                    <span class="avatar"><img src="{% static 'images/cult_logo.jpg' %}" alt="" /></span><br /><br />
+                        <ul class="icons">
+                            <li><a href="#" class="icon style2 fa-phone">
+                                <span class="label">
+                                    Phone
+                                </span>
+                                </a> Call: 093218 23754
+                            </li>
+
+                            <li><a href="https://www.google.com/maps/place/The+Cult/@19.102419,72.8887157,15z/data=!4m5!3m4!1s0x0:0x83a052f1ca769fd2!8m2!3d19.102419!4d72.8887157" 
+                                   class="icon style2 fa-map-marker"><span class="label">Location</span></a> Hotel Peninsula Grand, Opp. Sakinaka Metro Station, Andheri airport road, Saki naka.
+                            </li>
+                        </ul>
+                </header>
+
+				<!-- Main -->
+					<section id="main">
+
+
+						<!-- Thumbnails -->
+                        <section class="thumbnails">
+                            <div>
+                                <a data-aos="zoom-out">
+                                    <img src="{% static 'images/thumbs/cult_img.jpg' %}" alt="" />
+                                    <h1>Event 1</h1>
+                                </a>
+                                <a data-aos="zoom-out">
+                                    <img src="{% static 'images/thumbs/yeda_img.jpg' %}" alt="" />
+                                    <h1>Event 2</h1>
+                                </a>
+                                
+                            </div>
+                            <div>
+                                <a data-aos="zoom-out">
+                                    <img src="{% static 'images/thumbs/mitron_img.jpg' %}" alt="" />
+                                    <h1>Event 3</h1>
+                                </a>
+                                <a data-aos="zoom-out">
+                                    <img src="{% static 'images/thumbs/playboy_img.jpg' %}" alt="" />
+                                    <h1>Event 4</h1>
+                                </a>
+                            </div>
+
+                        </section>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p>&copy; All rights reserved.<br/>
+                        Design: <a href="https://instagram.com/alisolankii">Ali Solanki</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/aos.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+            <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+            <script type="text/javascript">
+                AOS.init();
+            </script>
+
+	</body>
+</html>
