@@ -1,0 +1,16 @@
+{% load static %}
+{%block content%}
+
+<div class="container mx-auto my-auto">
+        <div class="col-lg-4">
+        <form method="POST" class="form-signin">
+            <h1 class="h3 pt-5 mb-3 font-weight-normal">LOGIN</h1>
+            {% csrf_token %}
+            {{form.as_p}}
+            </div>
+            <button class="btn btn-lg btn-primary ml-3" type="submit">Login</button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
+        </form>
+</div>
+</div>
+{%endblock%}

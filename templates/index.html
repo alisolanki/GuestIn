@@ -1,84 +1,208 @@
 ﻿{% load static %}
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>GuestIn</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
-    <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}" />
-    <link rel='shortcut icon' type='image/x-icon' href="{% static 'images/favicon.ico' %}" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="{% static 'assets/css/materialize.min.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
 
-</head>
-<body>
+    <nav class="navbar dark absolute">
+      <div class="nav-wrapper">
+        <a href="horizontal-half.html" class="brand-logo"><i class="icon-diamond white-text"></i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Idhar</a></li>
+          <li><a href="#">Navbar</a></li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">Ayega</a></li>
+        </ul>
 
+        <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
+      </div>
+    </nav>
+    <ul id="slide-out" class="side-nav">
+        <li><a href="#">Idhar</a></li>
+        <li><a href="#">Navbar</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Ayega</a></li>
+    </ul>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <span class="avatar"><img src="{% static 'images/guestin.logos/text_symbol_white.png' %}" alt="" /></span><br />
-            <h1>
-                This is <strong>GuestIn</strong>, your one stop solution to get listed in the guestlist
-                of any Club or Bar all over <strong>Mumbai</strong>.<br />
-            </h1>
-            <ul class="icons">
-                <li><a href="https://instagram.com/guestineve" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://www.gmail.com/" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-            </ul>
-            <br />
-        </header>
-
-        <!-- Main -->
-        <section id="main">
-
-            <!-- Thumbnails -->
-            <section class="thumbnails">
-                <div>
-                    <a data-aos="zoom-out" href="accounts/cult">
-                        <img src="{% static 'images/thumbs/cult_img.jpg' %}" alt="The Cult" />
-                        <h1>The Cult</h1>
-                    </a>
-                    <a data-aos="zoom-out">
-                        <img src="{% static 'images/thumbs/yeda_img.jpg' %}" alt="Yeda Republic" />
-                        <h1>Yeda Republic</h1>
-                    </a>
-
-                </div>
-                <div>
-                    <a data-aos="zoom-out">
-                        <img src="{% static 'images/thumbs/mitron_img.jpg' %}" alt="M.I.T.R.O.N" />
-                        <h1>M.I.T.R.O.N</h1>
-                    </a>
-                    <a data-aos="zoom-out">
-                        <img src="{% static 'images/thumbs/playboy_img.jpg' %}" alt="Playboy Club" />
-                        <h1>Playboy The Club</h1>
-                    </a>
-                </div>
-
-            </section>
-
-        </section>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <p>
-                &copy; All rights reserved.<br />
-                Design: <a href="https://instagram.com/alisolankii">Ali Solanki</a>.
-            </p>
-        </footer>
-
+    <div class="header full-height horizontal-half-transition">
+      <div class="background">
+        <img src="https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?cs=srgb&dl=audience-band-celebration-2034851.jpg&fm=jpg" alt="">
+      </div>
+      <div class="phone-preview-sizer">
+        <div class="phone-preview"></div>
+        <div class="image-container active" style="background-image:url({%static 'images/bg_nightlife.jpg'%})"></div>
+        <div class="image-container" style="background-image:url({%static 'images/bg_nightlife.jpg'%})"></div>
+        <div class="image-container" style="background-image:url({%static 'images/bg_nightlife.jpg'%})"></div>
+      </div>
+      <div class="horizontal-half-wrapper right-side active">
+        <div class="header-background white"></div>
+        <div class="header-wrapper row valign-wrapper">
+          <div class="col s12 m8 offset-m2 valign">
+            <h1>Welcome To GuestIn</h1>
+            <span class="tagline">Idhar tagline aayega</span>
+            <button class="read-more"><i class="icon-caret-down"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-half-wrapper">
+        <div class="header-background white"></div>
+        <div class="header-wrapper row valign-wrapper">
+          <div class="col s12 m8 offset-m2 valign">
+            <h1>Second!</h1>
+            <span class="tagline">Second tagline with more information.</span>
+            <button class="read-more"><i class="icon-caret-down"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-half-wrapper right-side">
+        <div class="header-background white"></div>
+        <div class="header-wrapper row valign-wrapper">
+          <div class="col s12 m8 offset-m2 valign">
+            <h1>Third!</h1>
+            <span class="tagline">Third tagline with more information.</span>
+            <button class="read-more"><i class="icon-caret-down"></i></button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="{% static 'assets/js/aos.js' %}"></script>
-    <script src="{% static 'assets/js/main.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script type="text/javascript">
-        AOS.init();
-    </script>
-
-</body>
+    <div class="section valign-wrapper">
+      <div class="row valign">
+        <div class="col s12 m10 offset-m1">
+          <div class="row">
+            <div class="col s12"><h2 class="section-title">Reviews</h2></div>
+            <div class="col s12 m6 l4">
+              <h4><i class="icon-light-bulb"></i></h4>
+              <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, beatae id .</p>
+            </div>
+            <div class="col s12 m6 l4">
+              <h4><i class="icon-bolt"></i></h4>
+              <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, tempore?</p>
+            </div>
+            <div class="col s12 m6 l4">
+              <h4><i class="icon-rocket"></i></h4>
+              <p class="caption">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, voluptatem!</p>
+            </div>
+            <div class="col s12 m6 l4">
+              <h4><i class="icon-settings"></i></h4>
+              <p class="caption">This is a cool feature about your product! It really separates you from the crowd.</p>
+            </div>
+            <div class="col s12 m6 l4">
+              <h4><i class="icon-umbrella"></i></h4>
+              <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum.</p>
+            </div>
+            <div class="col s12 m6 l4">
+              <h4><i class="icon-compass"></i></h4>
+              <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, voluptatum?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section light full-height">
+      <div class="row">
+        <div class="col s12 m10 offset-m1 center">
+          <h1>Clubs</h1>
+          <div class="row masonry-grid">
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image">
+                  <a href="/cult_page.html"><img src="{% static 'images/thumbs/cult_img.jpg'%}"></a>
+                  <span class="card-title">The Cult</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image">
+                  <a href="blog.html"><img src="{% static 'images/thumbs/mitron_img.jpg'%}"></a>
+                  <span class="card-title">Another Blog Post</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image">
+                  <a href="blog.html"><img src="{% static 'images/thumbs/playboy_img.jpg'%}"></a>
+                  <span class="card-title">Click Bait Article</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image">
+                  <a href="blog.html"><img src="{% static 'images/thumbs/yeda_img.jpg'%}"></a>
+                  <span class="card-title">Don't Read This!</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image">
+                  <a href="blog.html"><img src="{% static 'images/thumbs/mitron_img.jpg'%}"></a>
+                  <span class="card-title">Why Are You Still Reading?</span>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image">
+                  <a href="blog.html"><img src="{% static 'images/thumbs/cult_img.jpg'%}"></a>
+                  <span class="card-title">Good Bye</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section light valign-wrapper">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col s12"><h2 class="section-title">Contact Us</h2></div>
+            <div class="input-field col s6">
+              <input id="first_name" type="text">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text">
+              <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Message</label>
+              <a class="waves-effect waves-light btn-large">Submit</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s6 m3">
+            <img class="materialize-logo" src="images/materialize-teal.png" alt="">
+            <p>Made with &hearts; by Nishit, Ali</p>
+          </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{% static 'assets/js/materialize.min.js'%}"></script>
+    <script src="{% static 'assets/js/image.js' %}"></script>
+    <script src="{% static 'assets/js/masonry.js' %}"></script>
+    <script src="{% static 'assets/js/twinmax.js'%}"></script>
+    <script src="{% static 'assets/js/scrollmagic.js'%}"></script>
+    <script src="{% static 'assets/js/ani.js'%}"></script>
+    <script src="{% static 'assets/js/startup.js'%}"></script>
+    <script src="{% static 'assets/js/init.js'%}"></script>
+  </body>
 </html>
