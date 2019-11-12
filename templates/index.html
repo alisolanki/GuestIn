@@ -1,7 +1,7 @@
 ﻿{% load static %}
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>GuestIn</title>
@@ -10,38 +10,39 @@
 
     <link rel="stylesheet" href="{% static 'assets/css/materialize.min.css' %}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}" />
+</head>
   <body>
 
     <nav class="navbar dark absolute">
       <div class="nav-wrapper">
         <a href="horizontal-half.html" class="brand-logo"><i class="icon-diamond white-text"></i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Idhar</a></li>
-          <li><a href="#">Navbar</a></li>
-          <li><a href="#">Links</a></li>
-          <li><a href="#">Ayega</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">About</a></li>
         </ul>
 
         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
       </div>
     </nav>
     <ul id="slide-out" class="side-nav">
-        <li><a href="#">Idhar</a></li>
-        <li><a href="#">Navbar</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Register</a></li>
         <li><a href="#">Links</a></li>
-        <li><a href="#">Ayega</a></li>
+        <li><a href="#">About</a></li>
     </ul>
 
     <div class="header full-height horizontal-half-transition">
       <div class="background">
-        <img src="https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?cs=srgb&dl=audience-band-celebration-2034851.jpg&fm=jpg" alt="">
+        <img src="{%static 'images/bg_audience.jpg' %}" alt="nightlife">
       </div>
       <div class="phone-preview-sizer">
         <div class="phone-preview"></div>
-        <div class="image-container active" style="background-image:url({%static 'images/bg_nightlife.jpg'%})"></div>
-        <div class="image-container" style="background-image:url({%static 'images/bg_nightlife.jpg'%})"></div>
-        <div class="image-container" style="background-image:url({%static 'images/bg_nightlife.jpg'%})"></div>
+        <div class="image-container active" style="background-image:url({%static 'images/guestin.logos/diamond_black.png'%})"></div>
+        <div class="image-container" style="background-image:url({%static 'images/guestin.logos/diamond_black.png'%})"></div>
+        <div class="image-container" style="background-image:url({%static 'images/guestin.logos/diamond_black.png'%})"></div>
       </div>
       <div class="horizontal-half-wrapper right-side active">
         <div class="header-background white"></div>
@@ -168,22 +169,26 @@
     <div class="section light valign-wrapper">
       <div class="container">
         <form>
-          <div class="row">
-            <div class="col s12"><h2 class="section-title">Contact Us</h2></div>
-            <div class="input-field col s6">
-              <input id="first_name" type="text">
-              <label for="first_name">First Name</label>
+            <div class="row">
+                <div class="col s12"><h2 class="section-title">Contact Us</h2></div>
+                <div class="input-field col s6">
+                    <input id="first_name" type="text">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text">
+                    <label for="last_name">Last Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="phone_number" type="text">
+                    <label for="phone_number">Phone Number</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Message</label>
+                    <a class="waves-effect waves-light btn-large">Submit</a>
+                </div>
             </div>
-            <div class="input-field col s6">
-              <input id="last_name" type="text">
-              <label for="last_name">Last Name</label>
-            </div>
-            <div class="input-field col s12">
-              <textarea id="message" class="materialize-textarea"></textarea>
-              <label for="message">Message</label>
-              <a class="waves-effect waves-light btn-large">Submit</a>
-            </div>
-          </div>
         </form>
       </div>
     </div>
